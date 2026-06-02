@@ -1,9 +1,15 @@
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
+
+import argparse
 import asyncio
 import client_ollama
+import client_nvidia
 import json
 import os
+import sys
+
+
 
 async def go_website(page, url):
     try:
@@ -113,10 +119,12 @@ async def submit_proposal(page, decision_made):
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'submit_proposal'. Error: {e}")
 
-async def evaluate_statement(page, data, lst):
+async def evaluate_statement(page, data, lst, model):
     try:
-        application_response = client_ollama.evaluate_statement(data)
-        decision_made = json.loads(application_response["message"]["content"])
+        application_response = model.evaluate_statement(data)
+        if application_response is not None:
+            decision_made = json.loads(application_response)
+        
         if decision_made.get("apply") is True:
             print(f"Se aprobo el proyecto.")
             await submit_proposal(page, decision_made)
@@ -133,7 +141,7 @@ async def evaluate_statement(page, data, lst):
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'evaluate_statement'. Error: {e}")
 
-async def get_statement(page, browser, list_proposal):
+async def get_statement(page, browser, list_proposal, model):
     try:
         await page.wait_for_selector(".project-item")
         statements = await page.locator(".project-item").all()
@@ -166,7 +174,11 @@ async def get_statement(page, browser, list_proposal):
             for item_delivery_date in delivery_date_container:
                 delivery_date = await item_delivery_date.inner_text()
                 if "Plazo de Entrega" in delivery_date:
-                    delivery = delivery_date
+                    delivery = delivery_date.split(":")[1].strip()
+                    break
+                elif "Duración del proyecto" in delivery_date:
+                    delivery = "No definido"
+                    break
 
             skills_container = await container.locator("a.skill").all()
             skills_list = []
@@ -179,11 +191,11 @@ async def get_statement(page, browser, list_proposal):
                     "title": title,
                     "budget": budget,
                     "information": information,
-                    "delivery": delivery.split(":")[1].strip(),
+                    "delivery": delivery,
                     "skills": skills_list
                 }
-
-                await evaluate_statement(page_statement, data_statement, list_proposal)
+                
+                await evaluate_statement(page_statement, data_statement, list_proposal, model)
             else:
                 print(f"El enunciado '{title}' ya fue evaluado.")
 
@@ -192,7 +204,7 @@ async def get_statement(page, browser, list_proposal):
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'get_statement'. Error: {e}")
 
-async def main():
+async def main(model):
     try:
         async with async_playwright() as p:
             # Inicializar lista de propuestas.
@@ -221,7 +233,7 @@ async def main():
             await select_filter(page)
 
             # 5. Obtener y evaluar los enunciados.
-            await get_statement(page, browser, list_proposal)
+            await get_statement(page, browser, list_proposal, model)
 
             await asyncio.sleep(300)
 
@@ -230,5 +242,21 @@ async def main():
         print(e)
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Ejemplo de script con bandera")
+
+    parser.add_argument(
+        "--model"
+    )
+
+    args = parser.parse_args()
+
+    if args.model == "local":
+        model = client_ollama
+    elif args.model == "cloud":
+        model = client_nvidia
+    else:
+        print("Seleccione un modelo valido. (client_ollama ó client_nvidia).")
+        sys.exit(1)
+
     load_dotenv()
-    asyncio.run(main())
+    asyncio.run(main(model))
