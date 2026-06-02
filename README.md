@@ -2,8 +2,9 @@
 
 ![Python](https://img.shields.io/badge/python-3.14-blue)
 ![Playwright](https://img.shields.io/badge/playwright-v1.44-orange)
-![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-purple)
-![License](https://img.shields.io/badge/license-MIT-green)
+![Ollama](https://img.shields.io/badge/Ollama%20LLM-purple)
+![Nvidia](https://img.shields.io/badge/Nvidia%20LLM-green)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 
 An autonomous, AI-driven web scraping and job application assistant. The system connects to freelance platforms, parses detailed job listings using Playwright, and leverages Local or Cloud-hosted Large Language Models (LLMs) to evaluate project viability and draft custom, context-aware proposals.
 
@@ -35,9 +36,6 @@ First, clone the repository and install the required Python packages along with 
 ```shell
 # Install python packages
 pip install -r requirements.txt
-```
-
-```shell
 # Install required browser binaries for Playwright
 playwright install
 ```
@@ -53,10 +51,10 @@ python workana.py -model=“local”
 ```
 
 ### If you want to use the script with a model hosted in the cloud.
-2. Create a .env file in the script’s root directory with the variables EMAIL, PASSWORD (credentials for the page where the ad is published), and NVIDIA_API.
-3. Create an account at (https://build.nvidia.com/)[https://build.nvidia.com/] and generate an API Key.
-4. Paste the API Key into the .env file generated in step 1 and use the NVIDIA_API variable.
-NOTE: By default, the script uses the “qwen/qwen3-coder-480b-a35b-instruct” model. If you want to use a different one, you can change the name in the “client_nvidia.py” file.
+2. Create a `.env` file in the script’s root directory with the variables `EMAIL`, `PASSWORD` (credentials for the page where the ad is published), and NVIDIA_API.
+3. Create an account at [Nvidia](https://build.nvidia.com/) and generate an API Key.
+4. Paste the API Key into the `.env` file generated in step 1 and use the NVIDIA_API variable.
+NOTE: By default, the script uses the `qwen/qwen3-coder-480b-a35b-instruct` model. If you want to use a different one, you can change the name in the `client_nvidia.py` file.
 5. Use the command. 
 ```
 python workana.py -model=“cloud”
