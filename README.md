@@ -1,7 +1,5 @@
 # Intelligent system for tracking and filtering market offers
 
-# Intelligent System for Tracking and Filtering Market Offers
-
 ![Python](https://img.shields.io/badge/python-3.14-blue)
 ![Playwright](https://img.shields.io/badge/playwright-v1.44-orange)
 ![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-purple)
