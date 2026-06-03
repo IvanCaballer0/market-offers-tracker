@@ -10,7 +10,6 @@ import os
 import sys
 
 
-
 async def go_website(page, url):
     try:
         print(f"Navegando al sitio web {url} ...")
@@ -22,6 +21,7 @@ async def go_website(page, url):
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'go_website'. Error: {e}")
 
+
 async def check_login(page):
     try:
         print("Iniciando sesión...")
@@ -29,6 +29,7 @@ async def check_login(page):
         return await page.locator("a[title='Ivan Caballero']").count() > 0
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'check_login'. Error: {e}")
+
 
 async def sign_in(page):
     try:
@@ -62,6 +63,7 @@ async def sign_in(page):
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'view_offers'. Error: {e}")
 
+
 async def view_offers(page):
     try:
         print("Navegando a las ofertas...")
@@ -74,11 +76,12 @@ async def view_offers(page):
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'sign_in'. Error: {e}")
 
+
 async def select_filter(page):
     try:
         print("Seleccionando el filtro de búsqueda...")
 
-        await page.click(".multi-select-selection")  
+        await page.click(".multi-select-selection")
         await page.wait_for_selector("span:has-text('Recurrente')", state="visible")
         await page.click("span:has-text('Recurrente')")
         await asyncio.sleep(3)
@@ -86,6 +89,7 @@ async def select_filter(page):
         print("Filtro seleccionado con éxito.")
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'select_filter'. Error: {e}")
+
 
 async def submit_proposal(page, decision_made):
     try:
@@ -119,27 +123,29 @@ async def submit_proposal(page, decision_made):
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'submit_proposal'. Error: {e}")
 
+
 async def evaluate_statement(page, data, lst, model):
     try:
         application_response = model.evaluate_statement(data)
         if application_response is not None:
             decision_made = json.loads(application_response)
-        
+
         if decision_made.get("apply") is True:
             print(f"Se aprobo el proyecto.")
             await submit_proposal(page, decision_made)
         elif decision_made.get("apply") is False:
             print(f"Proyecto descartado.")
             print(decision_made.get("project_proposal"))
-        
+
         lst.append(data["title"].lower())
 
         with open("proposals.txt", "a", encoding="utf-8") as f:
             f.write(f"{data["title"].lower()}\n")
-        
+
         await asyncio.sleep(10)
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'evaluate_statement'. Error: {e}")
+
 
 async def get_statement(page, browser, list_proposal, model):
     try:
@@ -149,19 +155,21 @@ async def get_statement(page, browser, list_proposal, model):
         path_tag = ".project-header .project-title span a"
 
         for statement in statements:
-            print("="*105)
+            print("=" * 105)
 
             tag = statement.locator(path_tag)
             partial_url = await tag.get_attribute("href")
             url = "https://www.workana.com" + partial_url
-            
+
             page_statement = await browser.new_page()
             await go_website(page_statement, url)
 
             container = page_statement.locator(".project-view-v3")
 
             tag_title = container.locator("h1.title")
-            title = await tag_title.evaluate("(el) => el.childNodes[0].textContent.trim()")
+            title = await tag_title.evaluate(
+                "(el) => el.childNodes[0].textContent.trim()"
+            )
             title = title.lower()
 
             budget_container = container.locator("h4.budget")
@@ -192,10 +200,12 @@ async def get_statement(page, browser, list_proposal, model):
                     "budget": budget,
                     "information": information,
                     "delivery": delivery,
-                    "skills": skills_list
+                    "skills": skills_list,
                 }
-                
-                await evaluate_statement(page_statement, data_statement, list_proposal, model)
+
+                await evaluate_statement(
+                    page_statement, data_statement, list_proposal, model
+                )
             else:
                 print(f"El enunciado '{title}' ya fue evaluado.")
 
@@ -203,6 +213,7 @@ async def get_statement(page, browser, list_proposal, model):
         print("Ya se recorrierón todos los enunciados de la primera pagina.")
     except Exception as e:
         print(f"Ocurrio un error en la funcion 'get_statement'. Error: {e}")
+
 
 async def main(model):
     try:
@@ -215,8 +226,7 @@ async def main(model):
 
             # Inicializar navegador.
             browser = await p.chromium.launch_persistent_context(
-                user_data_dir="./workana_profile",
-                headless=False
+                user_data_dir="./workana_profile", headless=False
             )
             page = await browser.new_page()
 
@@ -241,11 +251,24 @@ async def main(model):
     except Exception as e:
         print(e)
 
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Ejemplo de script con bandera")
+    parser = argparse.ArgumentParser(
+        add_help=False
+    )
 
     parser.add_argument(
-        "--model"
+        "-h",
+        "--help",
+        action="help",
+        help="Muestra el menu de ayuda."
+    )
+
+    parser.add_argument(
+        "-m",
+        "--model",
+        metavar="str",
+        help="Selecciona el modelo 'local' o 'cloud'."
     )
 
     args = parser.parse_args()

@@ -1,44 +1,3 @@
-rediseño y desarrollo web completo de página corporativa en wordpress con enfoque ui/ux y conversión
-senior dev con experiencia llm en producción — prototipo regtech b2b saas (8-10 semanas)
-technical support engineer help desk - gonzalo nahir salas
-experto en n8n y agentes ia
-experto en agentes ia de n8n
-desarrollo de sistema de automatización de respuestas con inteligencia artificial
-auditoría funcional y preparación para lanzamiento de tienda online
-desarrollo de plataforma de gestión de experiencia y fidelización de clientes
-experto en shopify para lanzar tienda online de accesorios y lujos para motos
-desarrollo de página de venta de libros online en wordpress
-desarrollador/a para plataforma de neurodesarrollo infantil (mvp)
-mecatrónico/desarrollador full-stack para proyecto agrotech con lorawan y aws iot
-ingeniero de visión artificial para optimización de procesamiento de imágenes con opencv y python
-desarrollador python etl para integración de datos inmobiliarios globales
-ingeniero de visión artificial para optimización de flujo de procesamiento de imágenpython/opencv)
-consultor  openclaw y paperclip con experiencia  en agentes autónomos y empresa de servicios
-automatización de producción de contenido para canales de youtube con ia
-desarrollo de aplicación móvil android para gestión de asistencia eficaz
-desarrollo y optimización de plataforma sma talents (web y móvil) con flutterflow y firebase
-auditoría técnica completa de ga4 y gtm para e-commerce
-automatización de proyectos y tareas para optimizar flujos de trabajo
-consultor senior microsoft dynamics 365 f&o/scm con experiencia en wms avanzado
-consultor operativo con experiencia en excel y monday
-experiencia en c#net y linux para recuperación urgente de scraper automatizado
-profesional experto en power bi para migración y optimización de informes excel
-integración e-commerce, contenido y marketing para tienda de computación
-desarrollo de chatbot para whatsapp y gestión de reseñas con integración web
-implementación y automatización de procesos con microsoft 365 para mype
-actualización de contenido y propuesta de paleta de colores para tres sitios web wordpress
-desarrollo e implementación de chatbot con ia para automatización de respuestas en whatsapp
-finalizar desarrollo de aplicación móvil con geolocalización para anuncios
-desarrollo full-stack de mvp para marketplace digital 'baúl del genio'
-desarrollo de plataforma e-commerce completa para negocio de decoración de eventos
-sistema de presupuestos y ventas en appsheet para empresa de construcción
-desarrollo de formulario web interactivo para pdf con funcionalidad de guardado
-mise en place d'un chatbot pour l'automatisation des réponses sur réseaux sociaux
-experto en tiendas shopify y creación de creatividades para meta ads (solo para hispanohablantes)
-desarrollador fullstack para aplicaciones web internas
-desarrollador de agentes de automatización y servicios en la nube
-instructor freelance para capacitación virtual en intel realsense d455 y programación python
-partner técnico para desarrollo de software empresarial recurrente con react, typescript y crm/ia
 desarrollo de marketplace móvil (apk) con sistema de pagos seguro y retención
 experto en autocad para edición de archivos técnicos y planos
 adaptación de identidad visual y configuración de wordpress con tutor lms
@@ -46,3 +5,23 @@ arquitecto/a de automatizaciones ia en airtable, n8n, agentes de voz y whatsapp 
 desarrollo de plataforma de monetización y trading para juegos online
 renovación integral de sitio web wordpress para plasagro.com
 desarrollo de página web profesional para nuevo negocio
+desarrollador web para menú digital de pizzería artesanal con cms y optimización móvil
+implementación completa de siigo pos pro premium para restaurante especializado
+experto en telethon para desarrollo y optimización de buscador de canales de telegram
+desarrollador web full stack con react, javascript, api rest y microservicios
+desarrollo de aplicación móvil / página web para negocio con pagos seguros
+configuración e integración de twilio whatsapp verify para registro en plataforma web
+desarrollo de aplicación móvil de fidelización y seguimiento para clientes get slim (android e ios)
+aliado tecnológico y estratégico para ecosistema digital de bienestar femenino
+resolución de problema de sincronización y procesamiento de contenido iptv vod desde nas
+experto en config y resolución de problemas de facebook pixel y api en shopify y kommo crm
+desarrollo de tienda online en wordpress con woocommerce y pasarela de pagos bold en colombia
+profesional para mejoras y optimización web en wordpress + elementor
+desarrollo mvp de plataforma web de pronósticos deportivos con ranking y premios
+desarrollo de plataforma web integral para gestión de funeraria con múltiples roles y pasarelas pago
+desarrollo de aplicación móvil interactiva para estimular la lectura con personajes
+desarrollador android para creación de aplicación móvil personalizada
+desarrollador para implementar cms y hacer autoadministrable sitio next.js en vercel
+desarrollo de plataforma completa de delivery y e-commerce (clon pedidosya/rappi)
+automatización de respuestas en whatsapp para comunicación en inglés
+desarrollo y diseño de tienda online shopify para comunidad lgbtiq+ en colombia
