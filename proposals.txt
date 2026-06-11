@@ -1,27 +1,60 @@
-desarrollo de marketplace móvil (apk) con sistema de pagos seguro y retención
-experto en autocad para edición de archivos técnicos y planos
-adaptación de identidad visual y configuración de wordpress con tutor lms
-arquitecto/a de automatizaciones ia en airtable, n8n, agentes de voz y whatsapp ia para crm
-desarrollo de plataforma de monetización y trading para juegos online
-renovación integral de sitio web wordpress para plasagro.com
-desarrollo de página web profesional para nuevo negocio
-desarrollador web para menú digital de pizzería artesanal con cms y optimización móvil
-implementación completa de siigo pos pro premium para restaurante especializado
-experto en telethon para desarrollo y optimización de buscador de canales de telegram
-desarrollador web full stack con react, javascript, api rest y microservicios
-desarrollo de aplicación móvil / página web para negocio con pagos seguros
-configuración e integración de twilio whatsapp verify para registro en plataforma web
-desarrollo de aplicación móvil de fidelización y seguimiento para clientes get slim (android e ios)
-aliado tecnológico y estratégico para ecosistema digital de bienestar femenino
-resolución de problema de sincronización y procesamiento de contenido iptv vod desde nas
-experto en config y resolución de problemas de facebook pixel y api en shopify y kommo crm
-desarrollo de tienda online en wordpress con woocommerce y pasarela de pagos bold en colombia
-profesional para mejoras y optimización web en wordpress + elementor
-desarrollo mvp de plataforma web de pronósticos deportivos con ranking y premios
-desarrollo de plataforma web integral para gestión de funeraria con múltiples roles y pasarelas pago
 desarrollo de aplicación móvil interactiva para estimular la lectura con personajes
 desarrollador android para creación de aplicación móvil personalizada
 desarrollador para implementar cms y hacer autoadministrable sitio next.js en vercel
 desarrollo de plataforma completa de delivery y e-commerce (clon pedidosya/rappi)
 automatización de respuestas en whatsapp para comunicación en inglés
 desarrollo y diseño de tienda online shopify para comunidad lgbtiq+ en colombia
+desarrollo de plataforma web para validación de hologramas ganadores binkis
+desarrollo de aplicación móvil para gestión de pedidos con integración whatsapp
+configuración avanzada de moodle para emisión y validación de certificados con qr
+trabajo en factory con entrega de archivos y reporte final
+full stack c# .net core react postgresql para evolución de plataforma y integración whatsapp
+desarrollo de aplicación móvil de pedidos con seguimiento de delivery en tiempo real
+optimización y enlazado de página web wix con tienda online para proyecto académico
+experto en optimización de rendimiento para fifa 2026 en pc
+desarrollo de plataforma web para préstamos e inversiones con intereses mensuales
+desarrollo de sitio web premium en framer para práctica médica especializada
+soporte it basico de redes, usuarios de correo y de mas. remoto
+especialista freelance en automatización e inteligencia artificial para colaboración a largo plazo
+actualización de aplicación unity
+modernización de sitio web y desarrollo de landing page promocional para oposicionesbombero.com
+desarrollo de infraestructura digital completa para programa médico de diabetes en system.io
+digitalización y automatización de flujos de trabajo en taller automotriz
+experto en apollo para configuración de plataforma, automatización y capacitación
+desarrollo de sistema de respuesta automática con inteligencia artificial
+se buscan técnicos instaladores av para proyecto en santiago de chile (2-3 días)
+automatización inteligente de respuestas en whatsapp con ia
+desarrollo de plataforma integral de recursos humanos
+configuración y solución de problemas de notificaciones push en mattermost
+experto en gohighlevel para implementación de sistema de automatización comercial completo
+experto en configuración de red doméstica avanzada: openwrt, vlans, firewall y monitoreo
+automatización de gestión de leads para franquicia inmobiliaria century 21 google workspace y gemini
+desarrollo de prototipo de aplicación multiplataforma con 5 secciones interactivas
+integración estratégica de claude ai en todas las áreas de negocio
+desarrollo de plataforma de e-commerce para venta de filtros de marca específica
+especialista en mantenimiento cloud y devops para darivo pro
+automatización de respuestas en whatsapp para optimizar la atención al cliente y ventas
+desarrollador/a fullstack para plataforma de gestión de flota de taxi (proyecto por fases)
+desarrollo de plataforma e-commerce personalizada y escalable con motor de imágenes ia
+desarrollador full stack y devops | docker, vue 3, codeigniter 4 y n8n
+automatización de proceso en portal sat: generación, envío de acuses y notificación
+desarrollador backend wordpress para base de datos histórica y buscador avanzado
+desarrollador wordpress + elementor para web cultural: ediciones + montaje de enciclopedia tipo wiki
+experto en gohighlevel (ghl) + automatización de ia para agencia de clínicas de lujo
+arquitecto wordpress experto en lms para plataforma de formación escalable y de alto rendimiento
+desarrollador android para red social y chat para comunidad neurodivergente
+desarrollo de asistente virtual inteligente para atención al cliente 24/7
+automatización de procesos empresariales con inteligencia artificial
+desarrollador salesforce senior para implementación en proyecto multinacional
+búsqueda de especialista ux/ui y ai/ml para proyecto full-time de 6 meses
+desarrollador web con python para proyecto de desarrollo personalizado
+desarrollo de app móvil nivelup ai: plataforma de aprendizaje personalizado con ia
+desarrollo de sistema web interactivo para análisis de riesgos geológicos y ambientales
+desarrollo de plataforma web para portal de remates (sin pujas online)
+implementación y configuración avanzada de kamailio con balanceo de carga y seguridad
+desarrollo de mvp para plataforma web de viajes personalizados con afiliación
+entrenamiento  de  4-cu   para est4  edwards fire panels   en lengua hispana
+desarrollo de landing page con chatbot ia para captación de leads
+migración de múltiples versiones de odoo (v8, v12, v14) de nube a servidor local
+tengo una app de servicio de taxis que quisiera fuera actualizada
+automatización de whatsapp y gestión de leads con ia en e-commerce

@@ -245,7 +245,7 @@ async def main(model):
             # 5. Obtener y evaluar los enunciados.
             await get_statement(page, browser, list_proposal, model)
 
-            await asyncio.sleep(300)
+            await asyncio.sleep(30)
 
             await browser.close()
     except Exception as e:

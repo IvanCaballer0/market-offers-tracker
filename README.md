@@ -54,7 +54,7 @@ python workana.py -model=“local”
 2. Create a `.env` file in the script’s root directory with the variables `EMAIL`, `PASSWORD` (credentials for the page where the ad is published), and NVIDIA_API.
 3. Create an account at [Nvidia](https://build.nvidia.com/) and generate an API Key.
 4. Paste the API Key into the `.env` file generated in step 1 and use the NVIDIA_API variable.
-NOTE: By default, the script uses the `qwen/qwen3-coder-480b-a35b-instruct` model. If you want to use a different one, you can change the name in the `client_nvidia.py` file.
+NOTE: By default, the script uses the `qwen3-next-80b-a3b-instruct` model. If you want to use a different one, you can change the name in the `client_nvidia.py` file.
 5. Use the command. 
 ```
 python workana.py -model=“cloud”

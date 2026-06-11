@@ -94,7 +94,8 @@ def evaluate_statement(statement):
     prompt = create_prompt()
 
     completion = client.chat.completions.create(
-        model="qwen/qwen3-coder-480b-a35b-instruct",
+        # model="qwen/qwen3-coder-480b-a35b-instruct",
+        model="qwen/qwen3-next-80b-a3b-instruct",
         messages=[
             {
                 "role": "system",
